@@ -1,53 +1,17 @@
 <footer class="site-footer">
-
   <div class="wrapper">
-
     <h3 class="footer-heading">{{ site.title }}</h3>
-
     <div class="site-navigation">
-
-      <p><strong>Site Map</strong></p>
       <ul class="pages">
-        {% for page in site.pages %}
-        {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="site-contact">
-
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
-        <li>
-          <a href="mailto:{{ site.email }}">
-            <i class="fa fa-envelope-o"></i>
-            <span class="username">{{ site.email }}</span>
-          </a>
-        </li>
-
-        {% for social in site.social %}
-          {% if social.url != null %}
-          <li>
-            <a href="{{ social.url }}" title="{{ social.desc }}">
-              <i class="fa fa-{{ social.icon }}"></i>
-              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
-            </a>
+          <li class="nav-link">
+              <a href="http://gluesys.com/" target="_blank">웹 사이트</a> |
+              <a href="http://gluesys.com/개인정보취급방침/" target="_blank">개인 정보 취급 방침</a> |
+              <a href="http://gluesys.com/company/location-4/" target="_blank">연락처 및 오시는 길</a>
           </li>
-          {% endif %}
-        {% endfor %}
-
+          <li class="nav-link">Copyright &copy; Gluesys Co., Ltd. All rights reserved.
       </ul>
     </div>
-
-    <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
-      <p class="text">{{ site.description }}</p>
-    </div>
-
   </div>
-
 </footer>
 
 <!-- Scripts -->
