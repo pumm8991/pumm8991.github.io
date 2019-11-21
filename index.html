@@ -11,37 +11,36 @@ layout: default
 		</header>
 	  </div>
 	</div>
-	<div class="wrapper">
-		<div class="sub-title-out">
-			<div class="sub-title-in">
-				<div style="display: inline-block;width:380px;text-align: center;">
-					<div><img src="/assets/img_issue.png"></div>
-					<div>---</div>
-					<div>
-						<div class="sub-title-menu-button" onclick="#">바로가기</div>
-					</div>			
-				</div>
-				<div style="display: inline-block;width:380px;text-align: center;">
-					<div><img src="/assets/img_test.png"></div>
-					<div>---</div>
-					<div>
-						<div class="sub-title-menu-button" onclick="#">바로가기</div>
-					</div>			
-				</div>
-				<div style="display: inline-block;width:380px;text-align: center;">
-					<div><img src="/assets/img_info.png"></div>
-					<div>---</div>
-					<div>
-						<div class="sub-title-menu-button" onclick="#">바로가기</div>
-					</div>
-				</div>
-
+	<div class="sub-title-out">
+		<div class="sub-title-in">
+			<div style="display: inline-block;width:380px;text-align: center;">
+				<div><img src="/assets/img_issue.png"></div>
+				<div class="sub-title-menu-conetnt">---</div>
+				<div>
+					<div class="sub-title-menu-button" onclick="#">바로가기</div>
+				</div>			
 			</div>
-		</div>
+			<div style="display: inline-block;width:380px;text-align: center;">
+				<div><img src="/assets/img_test.png"></div>
+				<div class="sub-title-menu-conetnt">---</div>
+				<div>
+					<div class="sub-title-menu-button" onclick="#">바로가기</div>
+				</div>			
+			</div>
+			<div style="display: inline-block;width:380px;text-align: center;">
+				<div><img src="/assets/img_info.png"></div>
+				<div class="sub-title-menu-conetnt">---</div>
+				<div>
+					<div class="sub-title-menu-button" onclick="#">바로가기</div>
+				</div>
+			</div>
 
+		</div>
+	</div>
+	<div class="wrapper">
 		<ul class="post-list">
 		  {% for post in paginator.posts %}
-		  <li>
+		  <li class="main-conetnt">
 			<h2>
 			  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</h2>
@@ -62,7 +61,7 @@ layout: default
 			</section>
 		  </li>
 		  {% if forloop.last == false %}
-		  <hr>
+		 
 		  {% endif %}
 		  {% endfor %}
 		</ul>

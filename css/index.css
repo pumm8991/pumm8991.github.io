@@ -84,8 +84,9 @@ sub-title-in {
 	height: 128px;
 	width: 380px;
 }
-/* 첫번째 서브 메뉴 내용 */
-.sub-title-menu1-conetnt {
+/* 서브 메뉴 내용 */
+.sub-title-menu-conetnt {
+  height: 30px;
 
 }
 
@@ -96,10 +97,6 @@ sub-title-in {
 	margin-top: 128px;
 	width: 380px;
 }
-/* 두번째 서브 메뉴 내용 */
-.sub-title-menu1-conetnt {
-
-}
 
 /* 세번째 서브 메뉴 */
 .sub-title-menu3 {
@@ -107,10 +104,6 @@ sub-title-in {
 	background-repeat: no-repeat;
 	margin-top: 128px;
 	width: 380px;
-}
-/* 세번째 서브 메뉴 내용 */
-.sub-title-menu1-conetnt {
-
 }
 
 /*  서브 메뉴 링크 */
@@ -127,4 +120,10 @@ sub-title-in {
 /* 서브 메뉴간 간격 */
 .sub-title-menu-padding {
 	margin-right: 30px;
+}
+
+/* 메인 게시물 */
+.main-conetnt {
+  background-color: #FFF;
+  margin-bottom: 30px;
 }
