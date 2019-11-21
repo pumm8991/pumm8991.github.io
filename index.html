@@ -41,11 +41,12 @@ layout: default
 		<div style="text-align: center;height:138px;padding-top:50px;"><h1>최근게시물</h1></div>
 		<ul class="post-list">
 		  {% for post in paginator.posts %}
+				<div>
+					{{ post.cover }}
+				</div>
 		  	
 				<li class="main-conetnt">
-					<div>
-						{{ post.cover }}
-					</div>
+					
 					<div>
 						<h2>
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
