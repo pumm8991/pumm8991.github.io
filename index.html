@@ -44,10 +44,8 @@ layout: default
 				<div>
 					{{ post.cover }}
 				</div>
-		  	
-				<li class="main-conetnt">
-					
-					<div>
+				<div>
+					<li class="main-conetnt">
 						<h2>
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 						</h2>
@@ -66,8 +64,8 @@ layout: default
 						{% endfor %}{% endif %}
 						</div>
 						</section>
-					</div>
-				</li>
+					</li>
+				</div>
 			
 		  {% endfor %}
 		</ul>
