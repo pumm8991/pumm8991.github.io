@@ -61,3 +61,56 @@
 .tag:hover::after {
   border-left-color: #f05422;
 }
+
+/* 서브 메뉴 전체 */
+.sub-title-out {
+	width: 100%;
+	text-align: center;
+	padding: 120px 0 100px 0;
+}
+
+/* 서브 메뉴 내부 */
+sub-title-in {
+	display: inline-block;
+	width: 1200px;
+	height: 178px;
+}
+
+/* 첫번째 서브 메뉴 */
+.sub-title-menu1 {
+	background-image: url("/assets/img_issue.png");
+	height: 128px;
+}
+/* 첫번째 서브 메뉴 내용 */
+.sub-title-menu1-conetnt {
+
+}
+
+/* 두번째 서브 메뉴 */
+.sub-title-menu2 {
+	background-image: url("/assets/img_test.png");
+	margin-top: 128px;
+}
+/* 두번째 서브 메뉴 내용 */
+.sub-title-menu1-conetnt {
+
+}
+
+/* 세번째 서브 메뉴 */
+.sub-title-menu3 {
+	background-image: url("/assets/img_info.png");
+	margin-top: 128px;
+}
+/* 세번째 서브 메뉴 내용 */
+.sub-title-menu1-conetnt {
+
+}
+
+/*  서브 메뉴 링크 */
+.sub-title-menu-button {
+	width : 156px;
+	height : 46px;
+	border-radius : 23px;
+	background-color : #ff6ca8;
+	color : #FFFFFF;
+}
