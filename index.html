@@ -41,6 +41,7 @@ layout: default
 		<div style="text-align: center;height:138px;padding-top:50px;"><h1>최근게시물</h1></div>
 		<div class="post-list">
 		  {% for post in paginator.posts %}
+		  {{post}}
 				<div style="padding-bottom: 30px;height: 270px;">		  
 					<div style="float: left; width: 240px;">
 						<img src="{{ post.cover }}" style="width:240px; height:240px">
@@ -51,7 +52,7 @@ layout: default
 							<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 							</h2>
 							<section class="post-excerpt" itemprop="description">
-							<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+							<p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 							</section>
 							<section class="post-meta">
 							<div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
