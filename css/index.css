@@ -66,6 +66,7 @@
 .sub-title-out {
 	width: 100%;
 	text-align: center;
+	background-color: #FFF;
 	padding: 104px 0 100px 0;
 }
 
@@ -116,9 +117,11 @@ sub-title-in {
 .sub-title-menu-button {
 	width : 156px;
 	height : 46px;
+	padding-top: 8px;
 	border-radius : 23px;
 	background-color : #ff6ca8;
 	color : #FFFFFF;
+	margin:0 auto;
 }
 
 /* 서브 메뉴간 간격 */
