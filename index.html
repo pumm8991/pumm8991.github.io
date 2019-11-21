@@ -3,158 +3,109 @@ layout: default
 ---
 <div class="home" style="background-color: #F1F1F1;">
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <!--<h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}-->
-    </header>
-  </div>
-</div>
-<div class="wrapper">
-	<!--<div class="sub-title-out">
-			<table class="sub-title-in">
-				<tr>
-					<td>
-						<table>
-							<tr>
-								<td class="sub-title-menu1"></td>
-							</tr>
-							<tr>
-								<td class="sub-title-menu1-conetnt">---</td>
-							</tr>
-							<tr>
-								<td><button class="sub-title-menu-button">바로가기</button></td>
-							</tr>
-						</table>
-					</td>
-					<td width="30px">&nbsp;</td>
-					<td>
-						<table>
-							<tr>
-								<td class="sub-title-menu2"></td>
-							</tr>
-							<tr>
-								<td class="sub-title-menu2-conetnt">---</td>
-							</tr>
-							<tr>
-								<td><button class="sub-title-menu-button">바로가기</button></td>
-							</tr>
-						</table>
-					</td>
-					<td width="30px">&nbsp;</td>
-					<td>
-						<table>
-							<tr>
-								<td class="sub-title-menu3"></td>
-							</tr>
-							<tr>
-								<td class="sub-title-menu3-conetnt">---</td>
-							</tr>
-							<tr>
-								<td><button class="sub-title-menu-button">바로가기</button></td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-	</div>-->
-	<div class="sub-title-out">
-		<div class="sub-title-in">
-			<div style="display: inline-block;width:380px;text-align: center;">
-				<div><img src="/assets/img_issue.png"></div>
-				<div>---</div>
-				<div>
-					<div class="sub-title-menu-button" onclick="#">바로가기</div>
-				</div>			
-			</div>
-			<div style="display: inline-block;width:  380px;text-align: center;">
-				<div><img src="/assets/img_test.png"></div>
-				<div>---</div>
-				<div>
-					<div class="sub-title-menu-button" onclick="#">바로가기</div>
-				</div>			
-			</div>
-			<div class="sub-title-menu-padding" style="display: inline-block">&nbsp;</div>
-				<div><img src="/assets/img_info.png"></div>
-				<div>---</div>
-				<div>
-					<div class="sub-title-menu-button" onclick="#">바로가기</div>
-				</div>
-			</div>
-
-		</div>
+	<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
+	  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+		<header class="site-header">
+		  <!--<h1 class="title">{{ site.title }}</h1>
+		  {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}-->
+		</header>
+	  </div>
 	</div>
+	<div class="wrapper">
+		<div class="sub-title-out">
+			<div class="sub-title-in">
+				<div style="display: inline-block;width:380px;text-align: center;">
+					<div><img src="/assets/img_issue.png"></div>
+					<div>---</div>
+					<div>
+						<div class="sub-title-menu-button" onclick="#">바로가기</div>
+					</div>			
+				</div>
+				<div style="display: inline-block;width:380px;text-align: center;">
+					<div><img src="/assets/img_test.png"></div>
+					<div>---</div>
+					<div>
+						<div class="sub-title-menu-button" onclick="#">바로가기</div>
+					</div>			
+				</div>
+				<div style="display: inline-block;width:380px;text-align: center;">
+					<div><img src="/assets/img_info.png"></div>
+					<div>---</div>
+					<div>
+						<div class="sub-title-menu-button" onclick="#">바로가기</div>
+					</div>
+				</div>
 
+			</div>
+		</div>
 
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
-      </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
+		<ul class="post-list">
+		  {% for post in paginator.posts %}
+		  <li>
+			<h2>
+			  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h2>
+			<section class="post-excerpt" itemprop="description">
+			  <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+			</section>
+			<section class="post-meta">
+			  <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+			  <div class="post-categories">
+			  {% if post.categories.size > 0 %}in {% for cat in post.categories %}
+				{% if site.jekyll-archives %}
+				<a href="{{ site.baseurl }}/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+				{% else %}
+				<a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+				{% endif %}
+			  {% endfor %}{% endif %}
+			  </div>
+			</section>
+		  </li>
+		  {% if forloop.last == false %}
+		  <hr>
+		  {% endif %}
+		  {% endfor %}
+		</ul>
 
-<nav class="pagination" role="navigation">
-  <p>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="newer-posts" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      {% else %}
-        <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      {% endif %}
-    {% else %}
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-      </span>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    {% else %}
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-      </span>
-    {% endif %}
-  </p>
-</nav>
-
-</div>
+		<nav class="pagination" role="navigation">
+		  <p>
+			{% if paginator.previous_page %}
+			  {% if paginator.page == 2 %}
+				<a class="newer-posts" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
+				  <span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+				  </span>
+				</a>
+			  {% else %}
+				<a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
+				  <span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+				  </span>
+				</a>
+			  {% endif %}
+			{% else %}
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-square fa-stack-2x"></i>
+				<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+			  </span>
+			{% endif %}
+			<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+			{% if paginator.next_page %}
+			  <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-square fa-stack-2x"></i>
+				  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+				</span>
+			  </a>
+			{% else %}
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-square fa-stack-2x"></i>
+				<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+			  </span>
+			{% endif %}
+		  </p>
+		</nav>
+	</div>
 </div>
