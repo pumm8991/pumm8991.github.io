@@ -3,7 +3,7 @@ layout: default
 ---
 
 <link rel="stylesheet" href="/public/flexslider.css" type="text/css">
-<script src="/public/jquery1.6.2.js"></script>
+<script src="/public/jquery-1.9.0.js"></script>
 <script src="/public/jquery.flexslider.js"></script>
 <style>
 @font-face {
@@ -76,7 +76,6 @@ layout: default
 		<div style="text-align: center;height:138px;padding-top:50px;"><h1>최근게시물</h1></div>
 		<div class="post-list">
 		  {% for post in paginator.posts limit:3 %}
-		  {{post}}
 				<div style="padding-bottom: 30px;height: 270px;">		  
 					<div style="float: left; width: 240px;">
 						<img src="{{ post.cover }}" style="width:240px; height:240px">
