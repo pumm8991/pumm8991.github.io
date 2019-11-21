@@ -39,13 +39,13 @@ layout: default
 	</div>
 	<div class="wrapper">
 		<div style="text-align: center;height:138px;padding-top:50px;"><h1>최근게시물</h1></div>
-		<ul class="post-list">
+		<div class="post-list" style="padding-bottom: 30px;">
 		  {% for post in paginator.posts %}
 		  		<div style="float: left; width: 240px;">
 					<img src="{{ post.cover }}" style="width:240px; height:240px">
 				</div>
 				<div style="float: left; width: 960px; height:240px">
-					<li class="main-conetnt">
+					<div class="main-conetnt">
 						<h2>
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 						</h2>
@@ -64,11 +64,12 @@ layout: default
 						{% endfor %}{% endif %}
 						</div>
 						</section>
-					</li>
+					</div>
 				</div>
-			
+				<div style="height:30px;"></div>
+
 		  {% endfor %}
-		</ul>
+		</div>
 		<!--
 		<nav class="pagination" role="navigation">
 		  <p>
