@@ -120,3 +120,8 @@ sub-title-in {
 	background-color : #ff6ca8;
 	color : #FFFFFF;
 }
+
+/* 서브 메뉴간 간격 */
+.sub-title-menu-padding {
+	margin-right: 30px;
+}
