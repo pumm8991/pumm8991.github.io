@@ -1,16 +1,71 @@
 ---
 layout: default
 ---
+
+<link rel="stylesheet" href="/public/css/flexslider.css" type="text/css">
+<script src="/public/js/jquery1.6.2.js"></script>
+<script src="/public/js/jquery.flexslider.js"></script>
+<style>
+@font-face {
+ font-family: 'flexslider-icon';
+ src: url(/public/fonts/flexslider-icon.eot);
+ src: url(/public/fonts/flexslider-icon.woff) format('woff'),
+      url(/public/fonts/flexslider-icon.ttf) format('truetype');
+}
+
+</style>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "fade",
+      directionNav: true,
+      slideshowSpeed: 5000,
+      animationSpeed: 600,
+      touch: true
+    });
+  });
+</script>
+
 <div class="home" style="background-color: #F1F1F1;">
 
-	<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
+	<!--<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
 	  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-		<header class="site-header">
-		  <!--<h1 class="title">{{ site.title }}</h1>
-		  {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}-->
-		</header>
+		<header class="site-header"></header>
 	  </div>
-	</div>
+	</div>-->
+	<div class="flexslider">
+			<ul class="slides">
+		  {% for post in site.posts limit:5 %}
+		  <li>
+		  <div class="post">
+			<span class="post-date">{{ post.date | date_to_string }}</span>
+			<h1 class="post-title">
+			  <a href="{{ site.baseurl }}{{ post.url }}">
+				{{ post.title }}
+			  </a>
+			</h1>
+			{% if post.tags %}
+			<div class="post-div">
+			{% for tag in post.tags %}
+			<a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+			{% endfor %}
+			</div>
+			{% endif %}
+	
+			<article>
+			  {{ post.excerpt | markdownify }}
+			<article>
+			<div class="post-more">
+			  {% if site.disqus_short_name %}
+			  <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+			  {% endif %}
+			  <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+			</div>
+		  </div>
+		  </li>
+		  {% endfor %}
+			</ul>
+		</div>
 	<div class="sub-title-out">
 		<div class="sub-title-in">
 			<div style="display: inline-block;width:380px;text-align: center;">
@@ -40,7 +95,7 @@ layout: default
 	<div class="wrapper">
 		<div style="text-align: center;height:138px;padding-top:50px;"><h1>최근게시물</h1></div>
 		<div class="post-list">
-		  {% for post in paginator.posts %}
+		  {% for post in paginator.posts limit:3 %}
 		  {{post}}
 				<div style="padding-bottom: 30px;height: 270px;">		  
 					<div style="float: left; width: 240px;">
