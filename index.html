@@ -34,38 +34,18 @@ layout: default
 	  </div>
 	</div>-->
 	<div class="flexslider">
-			<ul class="slides">
-		  {% for post in site.posts limit:5 %}
-		  <li>
-		  <div class="post">
-			<span class="post-date">{{ post.date | date_to_string }}</span>
-			<h1 class="post-title">
-			  <a href="{{ site.baseurl }}{{ post.url }}">
-				{{ post.title }}
-			  </a>
-			</h1>
-			{% if post.tags %}
-			<div class="post-div">
-			{% for tag in post.tags %}
-			<a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
-			{% endfor %}
-			</div>
-			{% endif %}
-	
-			<article>
-			  {{ post.excerpt | markdownify }}
-			<article>
-			<div class="post-more">
-			  {% if site.disqus_short_name %}
-			  <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-			  {% endif %}
-			  <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-			</div>
-		  </div>
-		  </li>
-		  {% endfor %}
-			</ul>
-		</div>
+		<ul class="slides">
+			<li>
+			<img src="/public/slide1.jpg" />
+			</li>
+			<li>
+			<img src="/public/slide2.jpg" />
+			</li>
+			<li>
+			<img src="/public/slide3.jpg" />
+			</li>
+		</ul>
+	</div>
 	<div class="sub-title-out">
 		<div class="sub-title-in">
 			<div style="display: inline-block;width:380px;text-align: center;">
