@@ -79,7 +79,9 @@ sub-title-in {
 /* 첫번째 서브 메뉴 */
 .sub-title-menu1 {
 	background-image: url("/assets/img_issue.png");
+	background-repeat: no-repeat;
 	height: 128px;
+	width: 380px;
 }
 /* 첫번째 서브 메뉴 내용 */
 .sub-title-menu1-conetnt {
@@ -89,7 +91,9 @@ sub-title-in {
 /* 두번째 서브 메뉴 */
 .sub-title-menu2 {
 	background-image: url("/assets/img_test.png");
+	background-repeat: no-repeat;
 	margin-top: 128px;
+	width: 380px;
 }
 /* 두번째 서브 메뉴 내용 */
 .sub-title-menu1-conetnt {
@@ -99,7 +103,9 @@ sub-title-in {
 /* 세번째 서브 메뉴 */
 .sub-title-menu3 {
 	background-image: url("/assets/img_info.png");
+	background-repeat: no-repeat;
 	margin-top: 128px;
+	width: 380px;
 }
 /* 세번째 서브 메뉴 내용 */
 .sub-title-menu1-conetnt {
