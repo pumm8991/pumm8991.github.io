@@ -3,17 +3,16 @@ layout: default
 ---
 
 <link rel="stylesheet" href="/public/flexslider.css" type="text/css">
+<style>
+	@font-face {
+		font-family: 'flexslider-icon';
+		src: url(/public/fonts/flexslider-icon.eot);
+		src: url(/public/fonts/flexslider-icon.woff) format('woff'),
+			url(/public/fonts/flexslider-icon.ttf) format('truetype');
+	}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="/public/jquery.flexslider.js"></script>
-<style>
-@font-face {
- font-family: 'flexslider-icon';
- src: url(/public/fonts/flexslider-icon.eot);
- src: url(/public/fonts/flexslider-icon.woff) format('woff'),
-      url(/public/fonts/flexslider-icon.ttf) format('truetype');
-}
-
-</style>
 <script type="text/javascript" charset="utf-8">
   $(window).load(function() {
     $('.flexslider').flexslider({
@@ -24,6 +23,7 @@ layout: default
       touch: true
     });
   });
+  
 </script>
 
 <div class="home" style="background-color: #F1F1F1;">
@@ -36,13 +36,13 @@ layout: default
 	<div class="flexslider">
 		<ul class="slides">
 			<li>
-			<img src="/public/slide01.jpg" />
+				<img src="/public/slide01.jpg" />
 			</li>
 			<li>
-			<img src="/public/slide02.jpg" />
+				<img src="/public/slide02.jpg" />
 			</li>
 			<li>
-			<img src="/public/slide03.jpg" />
+				<img src="/public/slide03.jpg" />
 			</li>
 		</ul>
 	</div>
