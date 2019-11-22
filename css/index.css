@@ -86,8 +86,8 @@ sub-title-in {
 }
 /* 서브 메뉴 내용 */
 .sub-title-menu-conetnt {
-  height: 30px;
-
+  height: 160px;
+  line-height: 25px;
 }
 
 /* 두번째 서브 메뉴 */

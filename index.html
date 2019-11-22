@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- flexslider -->
 <link rel="stylesheet" href="/public/flexslider.css" type="text/css">
 <style>
 	@font-face {
@@ -11,26 +12,8 @@ layout: default
 			url(/public/fonts/flexslider-icon.ttf) format('truetype');
 	}
 </style>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="/public/jquery.flexslider.js"></script>
-<script type="text/javascript" charset="utf-8">
-  $(document).ready(function() {
-    $('.flexslider').flexslider({
-      animation: "fade",
-      directionNav: true,
-      slideshowSpeed: 5000,
-      animationSpeed: 600,
-      touch: true
-    });
-  });
-</script>
--->
+
 <div class="home" style="background-color: #F1F1F1;">
-	<!--<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-	  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-		<header class="site-header"></header>
-	  </div>
-	</div>-->
 	<div class="flexslider">
 		<ul class="slides">
 			<li>
@@ -48,21 +31,36 @@ layout: default
 		<div class="sub-title-in">
 			<div style="display: inline-block;width:380px;text-align: center;">
 				<div><img src="/assets/img_issue.png"></div>
-				<div class="sub-title-menu-conetnt">---</div>
+				<div class="sub-title-menu-conetnt">
+					<div>이슈사례</div>
+					<div>스토리지 기술 개발 및 구축 사례,</div>
+					<div>트러블 슈팅 과정에서 얻은 기술과</div>
+					<div>노하우를 아낌없이 공유 합니다.</div>
+				</div>
 				<div>
 					<div class="sub-title-menu-button" onclick="">바로가기</div>
 				</div>			
 			</div>
 			<div style="display: inline-block;width:380px;text-align: center;">
 				<div><img src="/assets/img_test.png"></div>
-				<div class="sub-title-menu-conetnt">---</div>
+				<div class="sub-title-menu-conetnt">
+					<div>테스트 자료</div>
+					<div>사내,실 업무 환경,공인 테스트 등</div>
+					<div>다양한 환경에서 진행된</div>
+					<div>테스트 결과를 공우 합니다.</div>
+				</div>
 				<div>
 					<div class="sub-title-menu-button" onclick="">바로가기</div>
 				</div>			
 			</div>
 			<div style="display: inline-block;width:380px;text-align: center;">
 				<div><img src="/assets/img_info.png"></div>
-				<div class="sub-title-menu-conetnt">---</div>
+				<div class="sub-title-menu-conetnt">
+					<div>지식 공유</div>
+					<div>글러스터FS와 기타 스토리지 관련</div>
+					<div>기술에 대한 다양한 정보와 지식을</div>
+					<div>공유 합니다.</div>
+				</div>
 				<div>
 					<div class="sub-title-menu-button" onclick="">바로가기</div>
 				</div>
