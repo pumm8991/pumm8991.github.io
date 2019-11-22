@@ -120,7 +120,7 @@ pre code.hljs {
 	}
 	// Nav menu
 	.navigation-wrapper {
-		@include outer-container(950px);
+		@include outer-container(1200px);
 		@include clearfix;
 		position: relative;
 	}
@@ -206,6 +206,7 @@ pre code.hljs {
 	 */
 	.post-list {
 		padding-top: 1em !important;
+		padding-bottom: 30px;
 		@extend %default-ul;
 	}
 	.post-meta {
@@ -370,7 +371,8 @@ pre code.hljs {
 		}
 	}
 	.wrapper {
-		@include outer-container(950px);
+		@include outer-container(1200px);
+		line-height: 30px;
 	}
 	.footer-heading {
 	}
