@@ -88,6 +88,7 @@ sub-title-in {
 .sub-title-menu-conetnt {
   height: 160px;
   line-height: 25px;
+  margin: 0 auto;
 }
 
 /* 두번째 서브 메뉴 */
