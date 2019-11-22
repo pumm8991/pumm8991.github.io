@@ -118,7 +118,7 @@ sub-title-in {
 	margin:0 auto;
 }
 
-.sub-title-menu-button > a:hover {
+a:hover >.sub-title-menu-button{
   text-decoration: none;
 }
 /* 서브 메뉴간 간격 */
