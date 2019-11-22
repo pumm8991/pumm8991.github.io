@@ -71,10 +71,14 @@
 }
 
 /* 서브 메뉴 내부 */
-sub-title-in {
+.sub-title-in {
 	display: inline-block;
 	width: 1200px;
 	height: 178px;
+}
+
+.sub-title-in a:hover {
+  text-decoration: none;
 }
 
 /* 첫번째 서브 메뉴 */
@@ -118,9 +122,6 @@ sub-title-in {
 	margin:0 auto;
 }
 
-a:hover >.sub-title-menu-button{
-  text-decoration: none;
-}
 /* 서브 메뉴간 간격 */
 .sub-title-menu-padding {
 	margin-right: 30px;
