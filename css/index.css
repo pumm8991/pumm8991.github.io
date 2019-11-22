@@ -77,10 +77,6 @@
 	height: 178px;
 }
 
-.sub-title-in a:hover {
-  text-decoration: none;
-}
-
 /* 첫번째 서브 메뉴 */
 .sub-title-menu1 {
 	background-image: url("/assets/img_issue.png");
@@ -119,7 +115,8 @@
 	border-radius : 23px;
 	background-color : #ff6ca8;
 	color : #FFFFFF;
-	margin:0 auto;
+  margin:0 auto;
+  cursor: pointer;
 }
 
 /* 서브 메뉴간 간격 */
