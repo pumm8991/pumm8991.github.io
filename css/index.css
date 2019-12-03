@@ -77,34 +77,22 @@
 	height: 178px;
 }
 
-/* 첫번째 서브 메뉴 */
-.sub-title-menu1 {
-	background-image: url("/assets/img_issue.png");
-	background-repeat: no-repeat;
-	height: 128px;
-	width: 380px;
+/* 서브 메뉴 타이틀 */
+.sub-title {
+	font-size : 22px;
+	font-weight : 500;
+	line-height : 32px;
+	letter-spacing : -0.6px;
 }
+
 /* 서브 메뉴 내용 */
 .sub-title-menu-conetnt {
   height: 130px;
-  line-height: 25px;
   margin: 0 auto;
-}
-
-/* 두번째 서브 메뉴 */
-.sub-title-menu2 {
-	background-image: url("/assets/img_test.png");
-	background-repeat: no-repeat;
-	margin-top: 128px;
-	width: 380px;
-}
-
-/* 세번째 서브 메뉴 */
-.sub-title-menu3 {
-	background-image: url("/assets/img_info.png");
-	background-repeat: no-repeat;
-	margin-top: 128px;
-	width: 380px;
+  font-size : 16px;
+  font-weight : 300;
+  line-height : 26px;
+  letter-spacing : -0.6px;
 }
 
 /*  서브 메뉴 링크 */
@@ -124,10 +112,23 @@
 	margin-right: 30px;
 }
 
+/* 메인게시물 제목 */
+.main-content-title {
+	font-size : 34px;
+	font-weight : 500;
+	line-height : 46px;
+	letter-spacing : -0.6px;
+}
+
 /* 메인 게시물 */
 .main-conetnt {
-  background-color: #FFF;
-  /*margin-bottom: 30px;*/
-  padding: 30px;
-  height: 240px;
+	background-color: #FFF;
+	/*margin-bottom: 30px;*/
+	padding: 30px;
+	height: 240px;
+	font-size : 22px;
+	font-weight : 500;
+	line-height : 32px;
+	letter-spacing : -0.6px;
+	color : #284cb2;
 }

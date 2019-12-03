@@ -53,7 +53,7 @@ layout: main
 			<div style="display: inline-block;width:380px;text-align: center;">
 				<div><img src="/assets/img_issue.png"></div>
 				<div class="sub-title-menu-conetnt">
-					<div>이슈사례</div>
+					<div class="sub-title">이슈사례</div>
 					<div>스토리지 기술 개발 및 구축 사례,</div>
 					<div>트러블 슈팅 과정에서 얻은 기술과</div>
 					<div>노하우를 아낌없이 공유 합니다.</div>
@@ -65,7 +65,7 @@ layout: main
 			<div style="display: inline-block;width:380px;text-align: center;">
 				<div><img src="/assets/img_test.png"></div>
 				<div class="sub-title-menu-conetnt">
-					<div>테스트 자료</div>
+					<div class="sub-title">테스트 자료</div>
 					<div>사내,실 업무 환경,공인 테스트 등</div>
 					<div>다양한 환경에서 진행된</div>
 					<div>테스트 결과를 공우 합니다.</div>
@@ -77,7 +77,7 @@ layout: main
 			<div style="display: inline-block;width:380px;text-align: center;">
 				<div><img src="/assets/img_info.png"></div>
 				<div class="sub-title-menu-conetnt">
-					<div>지식 공유</div>
+					<div class="sub-title">지식 공유</div>
 					<div>글러스터FS와 기타 스토리지 관련</div>
 					<div>기술에 대한 다양한 정보와 지식을</div>
 					<div>공유 합니다.</div>
@@ -99,9 +99,9 @@ layout: main
 					</div>
 					<div style="float: left; width: 960px; height:180px">
 						<div class="main-conetnt">
-							<h2>
-							<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-							</h2>
+							<div class="main-content-title">
+								<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+							</div>
 							<section class="post-excerpt" itemprop="description">
 							<p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 							</section>
