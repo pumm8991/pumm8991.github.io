@@ -185,6 +185,10 @@ pre code.hljs {
 				padding-right: 1.5em;
 			}
 		}
+
+		a:hover {
+		  text-decoration: none;
+		}
 		&:last-child a {
 			@include media ($tablet) {
 				padding-right: 1em;
