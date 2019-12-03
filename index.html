@@ -87,7 +87,8 @@ layout: main
 		</div>
 	</div>
 	<div class="wrapper">
-		<div style="text-align: center;height:138px;padding-top:50px;"><h1>최근게시물</h1></div>
+		<div style="text-align: center;height:138px;padding-top:50px;">
+			<div class="main-content-title">최근게시물</div></div>
 		<div class="post-list">
 		  {% for post in paginator.posts limit:3 %}
 				<div style="padding-bottom: 30px;height: 270px;">		  
@@ -96,9 +97,7 @@ layout: main
 					</div>
 					<div style="float: left; width: 960px; height:180px">
 						<div class="main-conetnt">
-							<div class="main-content-title">
-								<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-							</div>
+							<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 							<section class="post-excerpt" itemprop="description">
 							<p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 							</section>
