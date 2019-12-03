@@ -97,7 +97,7 @@ layout: main
 					</div>
 					<div style="float: left; width: 960px; height:180px">
 						<div class="main-conetnt">
-							<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+							<div class="main-conetnt-list-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 							<section class="post-excerpt" itemprop="description">
 							<p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 							</section>
