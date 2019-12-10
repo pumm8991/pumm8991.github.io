@@ -84,7 +84,7 @@
 /* 서브 메뉴 타이틀 */
 .sub-title {
 	font-size : 22px;
-	font-weight : 500;
+	font-weight : 600;
 	line-height : 52px;
 	letter-spacing : -0.6px;
 }
@@ -94,7 +94,7 @@
   height: 150px;
   margin: 0 auto;
   font-size : 16px;
-  font-weight : 300;
+  font-weight : 400;
   line-height : 26px;
   letter-spacing : -0.6px;
 }
