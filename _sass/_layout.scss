@@ -201,6 +201,7 @@ pre code.hljs {
  * Body
  */
 .page-content {
+	@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 	font-family : "Noto Sans", "Open Sans", "맑은 고딕", "Malgun Gothic","돋움", "Arial", dotum, sans-serif;
 	.wrapper {
 		@include outer-container(1200px);
